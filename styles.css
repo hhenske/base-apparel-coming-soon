@@ -1,12 +1,12 @@
 /* Colors
 Primary
-Desaturated Red: hsl(0, 36%, 70%)
-Soft Red: hsl(0, 93%, 68%)
+Desaturated Red: hsl(0, 36%, 70%) (text)
+Soft Red: hsl(0, 93%, 68%) (Error)
 Neutral
-Dark Grayish Red: hsl(0, 6%, 24%)
+Dark Grayish Red: hsl(0, 6%, 24%) (text)
 Gradients
-Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%) (light: white to pink)
+Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) (for email button)
 
 Typography
 Body Copy
@@ -14,6 +14,7 @@ Font size: 16px
 Font
 Family: Josefin Sans
 Weights: 300, 400, 600 */
+
 
 
 /* General Reset */
@@ -26,66 +27,103 @@ Weights: 300, 400, 600 */
   body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    background-color: #f9f9f9;
+    background: hsl(0, 93%, 98%);
   }
   
   .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    height: 700px;
   }
   
   .left-column {
-    flex: 2;
+    flex: 13;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-right: 20px;
+    align-items: space-between;
+    margin-left: 120px;
   }
   
   .right-column {
-    flex: 1;
+    flex: 12;
+    margin-left: 20px;
+
   }
   
   .logo {
-    max-width: 150px;
+    max-width: 140px;
+    margin-bottom: 100px;
   }
   
   .hero-image {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    /* max-width: 400px; */
+    height: 1auto;
+    margin-top: 0;
+    margin-top: 0;
   }
   
+  .left-text {
+    width: 400px;
+  } 
+
   h1 {
-    font-size: 36px;
-    color: #333;
+    margin-bottom: 30px;
+    font-size: 56px;
+    letter-spacing: 15px;
+  }
+
+  .rose-h1 {
+    color: hsl(0, 36%, 70%);
+    margin-right: 50px;
+    font-weight: 300;
+  }
+
+  .black-h1 {
+    color: hsl(0, 6%, 24%);
+    font-weight: 300;
   }
   
   p {
     font-size: 16px;
-    color: #555;
+    color: hsl(0, 36%, 70%);
     line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  .email-group {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: relative;
   }
   
   .email-input {
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
+    height: 45px;
     width: 100%;
-    max-width: 300px;
+    width: 400px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 50px;
+    position: absolute;
+    
   }
   
   .subscribe-button {
     padding: 10px 20px;
     font-size: 16px;
-    color: #fff;
-    background-color: #333;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: absolute;
+    margin-left: 300px;
+    width: 100px;
+    height: 45px;
   }
   
   .subscribe-button:hover {
