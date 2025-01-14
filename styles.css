@@ -149,30 +149,31 @@ Weights: 300, 400, 600 */
     .left-text {
         width: 250px;
       }
-      .email-group {
-        width: 100px;
+    .email-group {
+        width: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
       }
-      .email-input {
+    .email-input {
         width: 250px;
       }
-      .subscribe-button {
+    .subscribe-button {
         margin-left: 175px;
       }
-      h1 {
-        font-size:52px;
+    h1 {
+        font-size:48px;
       }
-      p {
+    p {
         font-size:15px
       }
+      
   }
 
   @media screen and (min-width: 880px) {
     .hero-mobile {
         display: none;
     }
-    .left-column {
-        width:
-    }
+
   }
 
   @media screen and (max-width: 880px) {
@@ -181,11 +182,34 @@ Weights: 300, 400, 600 */
     }
     .left-column {
         width: 100%;
+        /* align-items: center; */
     }
     .left-text {
         text-align: center;
     }
-    
+    .logo {
+        margin-bottom: 20px;
+        width: 100px;
+    }
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .rose-h1 {
+        text-align: center;
+        margin-left: 40px;
+    }
+    .email-group {
+        width: 100%;
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+    .email-input {
+        width: 250px;
+      }
+    .subscribe-button {
+        margin-left: 175px;
+      }
 
   }
 
@@ -200,9 +224,9 @@ Weights: 300, 400, 600 */
     }
     .logo {
         margin-left: 20px;
-    }
+        margin-bottom: 5px;
     h1 {
-        font-size: 48px;
+        font-size: 38px;
     }
   }
-  
+}
