@@ -49,6 +49,7 @@ Weights: 300, 400, 600 */
   }
   
   .right-column {
+    background-color:gray;
      width: 60%;
     margin-left: 20px;
     height: 100%;
@@ -140,6 +141,7 @@ Weights: 300, 400, 600 */
     .left-column {
         width: 25%;
         margin-left: 3%;
+        gap: 0;
     }
     .right-column {
         width: 75%;
@@ -169,7 +171,7 @@ Weights: 300, 400, 600 */
         display: none;
     }
     .left-column {
-        width: 100%;
+        width:
     }
   }
 
@@ -177,7 +179,30 @@ Weights: 300, 400, 600 */
     .right-column {
         display: none;
     }
+    .left-column {
+        width: 100%;
+    }
+    .left-text {
+        text-align: center;
+    }
     
 
+  }
+
+  @media screen and (max-width: 515px) {
+    .left-column {
+        margin: 0;
+    }
+    .left-text {
+        width: 100%;
+        padding-left: 5px;
+        padding-left: 5px;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 48px;
+    }
   }
   
